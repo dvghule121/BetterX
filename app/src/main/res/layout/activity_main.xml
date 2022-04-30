@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFBE7"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_marginTop="48dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Body Mass Index (BMI)"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -23,7 +24,7 @@
         android:id="@+id/height"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/input_bg"
         android:ems="10"
         android:fontFamily="@font/poppins_bold"
@@ -40,12 +41,14 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Enter your health detail to calculate BMI"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Enter your details"
+        android:textAlignment="center"
+        android:textColor="#069A8E"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +56,7 @@
         android:id="@+id/weight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:ems="10"
         android:fontFamily="@font/poppins_bold"
@@ -71,10 +74,11 @@
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="48dp"
         android:background="#FFFFFF"
         android:fontFamily="@font/poppins_medium"
         android:text="Weight"
+        android:textColor="#4B7BE5"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/weight"
         app:layout_constraintStart_toStartOf="@+id/weight" />
@@ -96,10 +100,11 @@
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="48dp"
         android:background="#FFFFFF"
         android:fontFamily="@font/poppins_medium"
         android:text="Height"
+        android:textColor="#4B7BE5"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/height"
         app:layout_constraintStart_toStartOf="@+id/height" />
@@ -108,7 +113,7 @@
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:text="Calculate"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/weight" />
@@ -137,7 +142,7 @@
                 android:padding="5dp"
                 android:text="You're Result"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -154,7 +159,7 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_bold"
         android:text="00"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -165,9 +170,12 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/bmiDescription"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.346" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
